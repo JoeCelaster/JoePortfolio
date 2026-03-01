@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Zalando Sans Expanded", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(141, 142, 143, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(156, 163, 175, 0.5) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
