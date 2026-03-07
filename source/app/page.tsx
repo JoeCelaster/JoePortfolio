@@ -7,7 +7,7 @@ import { link } from "fs";
 export default function Home() {
   const apps = [
     {
-      name: "Jwitter",
+      name: "Twitter",
       link:"https://x.com/JCelaster72729",
       color: "text-sky-400",
       glow: "group-hover:drop-shadow-[0_0_14px_rgba(56,189,248,0.9)]",
@@ -19,7 +19,7 @@ export default function Home() {
       ),
     },
     {
-      name: "Jithub",
+      name: "Github",
       color: "text-white",
       link:"https://github.com/joecelaster",
       glow: "group-hover:drop-shadow-[0_0_14px_rgba(255,255,255,0.8)]",
@@ -30,7 +30,7 @@ export default function Home() {
       ),
     },
     {
-      name: "JinkedIn",
+      name: "LinkedIn",
       color: "text-blue-400",
       link:"https://www.linkedin.com/in/joe-celaster-9581792a3/",
       glow: "group-hover:drop-shadow-[0_0_14px_rgba(59,130,246,0.9)]",
@@ -41,7 +41,7 @@ export default function Home() {
       ),
     },
     {
-      name: "JeetCode",
+      name: "LeetCode",
       color: "text-orange-400",
       link:"https://leetcode.com/u/Joe_Celaster123/",
       glow: "group-hover:drop-shadow-[0_0_14px_rgba(251,146,60,0.9)]",
@@ -54,7 +54,7 @@ export default function Home() {
       ),
     },
     {
-      name: "Jiscord",
+      name: "Discord",
       color: "text-indigo-400",
       link:"https://discord.gg/GkDcAErQbD",
       glow: "group-hover:drop-shadow-[0_0_14px_rgba(99,102,241,0.9)]",
