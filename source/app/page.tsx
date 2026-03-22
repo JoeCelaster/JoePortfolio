@@ -547,6 +547,13 @@ export default function Home() {
 
 </div>
 
+{/* Twitter Widget Script */}
+<Script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  strategy="lazyOnload"
+/>
+
 <hr className="text-gray-700"/>
 
       <div className="space-y-10">
