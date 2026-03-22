@@ -5,7 +5,6 @@ import { GitHubCalendar } from "react-github-calendar";
 export default function GithubCalendarSection() {
   return (
     <div className="w-full flex flex-col items-center gap-4">
-      
       <h2 className="text-lg font-medium text-black dark:text-white">
         JC's GitHub Activity
       </h2>

@@ -1,7 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import GithubCalendar from "../components/GithubCalendar";
+import GithubCalendar from "@/components/GithubCalendar";
+import Script from "next/script";
 import { link } from "fs";
 
 export default function Home() {
@@ -69,7 +70,7 @@ export default function Home() {
 
   return (
     <div className="selection:bg-green-400/50 selection:text-white flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black relative overflow-hidden">
-      <div className="absolute inset-0  bg-grid-pattern opacity-20 dark:opacity-30"></div>
+      <div className="fixed inset-0 bg-grid-pattern opacity-20 dark:opacity-30"></div>
       <main className="relative flex border border-gray-900 min-h-screen w-full max-w-3xl flex-col items-center justify-between py-6 sm:py-10 px-4 sm:px-6 lg:px-16 bg-white dark:bg-black sm:items-start">
       
       <div className="flex flex-col gap-8 sm:gap-12 w-full">
@@ -456,6 +457,97 @@ export default function Home() {
 
 <hr className="text-gray-700"/>
 
+{ /* Achievements */ }
+
+<div className="space-y-8">
+
+  {/* Section Header */}
+  <div className="flex items-center gap-3">
+    <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
+    <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">Achievements</h1>
+  </div>
+
+  {/* Description */}
+  <div className="text-center sm:text-left max-w-4xl">
+    <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+      My project <span className="inline-flex items-center gap-1 font-medium text-gray-800 dark:text-gray-200">
+        
+        Celtrix
+      </span> got featured by a large open source community (<a href="https://twitter.com/GithubProjects" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">@GithubProjects</a>) on X and Threads, and they wrote a detailed blog about it on the Open Source Projects site.
+    </p>
+    <a 
+      href="https://www.opensourceprojects.dev/post/0ff553d9-af97-44f1-9e15-9a1331148bee"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 mt-2 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+    >
+      Read the full article here
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15,3 21,3 21,9"/>
+        <line x1="10" y1="14" x2="21" y2="3"/>
+      </svg>
+    </a>
+  </div>
+
+  <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-center">
+
+    {/* Twitter */}
+    <div className="flex justify-center">
+      <div className="w-full max-w-[520px]">
+        <blockquote
+          className="twitter-tweet"
+          data-theme="dark"
+          data-align="center"
+        >
+          <p lang="en" dir="ltr">
+            Celtrix lets you spin up full-stack apps in seconds.<br/><br/>
+            One command.<br/>
+            Frontend + backend + database ready.<br/><br/>
+            No boilerplate.<br/>
+            No manual setup.<br/><br/>
+            Works with stacks like MERN, MEAN, Next.js and more.<br/><br/>
+            Perfect if you want to start building instead of configuring.
+          </p>
+          &mdash; GitHub Projects Community (@GithubProjects)
+          <a href="https://twitter.com/GithubProjects/status/2032804558632792290">
+            March 14, 2026
+          </a>
+        </blockquote>
+      </div>
+    </div>
+
+    {/* Threads */}
+    <div className="flex justify-center">
+      <div className="w-full max-w-[520px]">
+        <blockquote
+          className="text-post-media"
+          data-text-post-permalink="https://www.threads.com/@githubprojects/post/DV3aWsIFKAz"
+          data-text-post-version="0"
+          id="ig-tp-DV3aWsIFKAz"
+        >
+          <a
+            href="https://www.threads.com/@githubprojects/post/DV3aWsIFKAz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on Threads
+          </a>
+        </blockquote>
+
+        <Script
+          async
+          src="https://www.threads.com/embed.js"
+          strategy="lazyOnload"
+        />
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<hr className="text-gray-700"/>
 
       <div className="space-y-10">
 
